@@ -64,6 +64,7 @@ section{padding:6rem 3rem}
 .domain-data{color:var(--accent2);background:rgba(123,110,246,0.1);border:1px solid rgba(123,110,246,0.2)}
 .domain-cloud{color:var(--accent3);background:rgba(240,165,0,0.1);border:1px solid rgba(240,165,0,0.2)}
 .domain-ai{color:#f06292;background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.2)}
+.domain-messaging{color:#4fc3f7;background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2)}
 .proj-link{color:var(--muted);font-size:1.1rem;text-decoration:none;transition:color 0.2s}
 .project-card:hover .proj-link{color:var(--accent)}
 .proj-title{font-family:'Syne',sans-serif;font-size:1.2rem;font-weight:700;margin-bottom:0.6rem;letter-spacing:-0.01em}
@@ -90,7 +91,7 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
 .hero-desc{animation:fadeUp 0.6s 0.2s ease both}
 .ctas{animation:fadeUp 0.6s 0.3s ease both}
 .hero-stats{animation:fadeUp 0.6s 0.4s ease both}
-@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.hero{padding:6rem 1.5rem 3rem}section{padding:4rem 1.5rem}.project-card.featured{grid-column:span 1}.hero-stats{gap:1.5rem}footer{flex-direction:column;gap:1rem;text-align:center}}
+@media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links{display:none}.hero{padding:6rem 1.5rem 3rem}section{padding:4rem 1.5rem}.project-card.featured{grid-column:span 1}.project-card.hot{grid-column:span 1}.hero-stats{gap:1.5rem}footer{flex-direction:column;gap:1rem;text-align:center}}
 </style>
 </head>
 <body>
@@ -112,15 +113,15 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
       <span class="name">Japendra</span>
       <span class="role">QA & Data Engineer</span>
     </h1>
-    <p class="hero-desc">Building <strong>reliable test automation frameworks</strong> and <strong>AI-powered data pipelines</strong> across QA, cloud, and life science domains. Selenium · Playwright · Karate · Snowflake Cortex AI · dbt · Python · Java · Confluence · Jira.</p>
+    <p class="hero-desc">Building <strong>reliable test automation frameworks</strong> and <strong>AI-powered data pipelines</strong> across QA, cloud, and life science domains. Selenium · Playwright · Karate · Kafka · Snowflake Cortex AI · dbt · Python · Java.</p>
     <div class="ctas">
       <a href="https://github.com/Reddy062023" target="_blank" class="btn-primary">View GitHub ↗</a>
       <a href="#projects" class="btn-outline">See Projects</a>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-val">8</div><div class="stat-label">Public Repos</div></div>
+      <div><div class="stat-val">9</div><div class="stat-label">Public Repos</div></div>
+      <div><div class="stat-val">10+</div><div class="stat-label">Years Experience</div></div>
       <div><div class="stat-val">5+</div><div class="stat-label">Tech Domains</div></div>
-      <div><div class="stat-val">57</div><div class="stat-label">Automated Tests</div></div>
     </div>
   </div>
 </section>
@@ -135,6 +136,12 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
       <div class="skill-name">QA Automation</div>
       <div class="skill-desc">End-to-end test frameworks with POM, BDD, and CI/CD integration via Jenkins.</div>
       <div class="tags"><span class="tag tag-green">Selenium</span><span class="tag tag-green">Karate</span><span class="tag tag-green">TestNG</span><span class="tag tag-green">Cucumber</span><span class="tag tag-green">Jenkins</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📨</div>
+      <div class="skill-name">Event-Driven & Messaging</div>
+      <div class="skill-desc">Kafka + RabbitMQ pipelines with Avro serialization, content-based routing, DLQ handling, and end-to-end QA validation.</div>
+      <div class="tags"><span class="tag tag-green">Kafka</span><span class="tag tag-green">RabbitMQ</span><span class="tag tag-green">Avro</span><span class="tag tag-green">MongoDB</span></div>
     </div>
     <div class="skill-card">
       <div class="skill-icon">☁️</div>
@@ -193,7 +200,25 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
       </div>
     </a>
 
-    <a href="https://github.com/Reddy062023/Data-Science-Portfolio" target="_blank" class="project-card featured">
+    <a href="https://github.com/Reddy062023/kafka-avro-demo" target="_blank" class="project-card featured">
+      <div class="proj-top">
+        <span class="proj-domain domain-messaging">QA / Messaging</span>
+        <span class="proj-link">↗</span>
+      </div>
+      <div class="new-pill">★ New Project</div>
+      <div class="proj-title">Kafka + RabbitMQ + G4S Pipeline</div>
+      <div class="proj-desc">Production-grade event-driven pipeline for retail POS transaction processing. ALL sales transactions flow through Kafka. A filter service applies content-based routing — CASH transactions are routed via RabbitMQ to the G4S Manager Service which marks them SAFE. Includes Avro serialization, DLQ handling, idempotency, MongoDB validation, and Karate automation.</div>
+      <div class="proj-metrics">
+        <div><div class="metric-val">4</div><div class="metric-key">Test Types</div></div>
+        <div><div class="metric-val">2</div><div class="metric-key">Msg Systems</div></div>
+        <div><div class="metric-val">5</div><div class="metric-key">Payment Types</div></div>
+      </div>
+      <div class="proj-stack">
+        <span class="stack-tag">Java</span><span class="stack-tag">Kafka</span><span class="stack-tag">Avro</span><span class="stack-tag">RabbitMQ</span><span class="stack-tag">Spring Boot</span><span class="stack-tag">MongoDB</span><span class="stack-tag">Karate</span><span class="stack-tag">Docker</span>
+      </div>
+    </a>
+
+    <a href="https://github.com/Reddy062023/Data-Science-Portfolio" target="_blank" class="project-card">
       <div class="proj-top">
         <span class="proj-domain domain-data">Data Science</span>
         <span class="proj-link">↗</span>
@@ -250,7 +275,7 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
     <a href="https://lifescience-chatbot-poc-jbbcmgikfkugfwpdhkumsc.streamlit.app/" target="_blank" class="project-card">
       <div class="proj-top"><span class="proj-domain domain-ai">AI / NLP</span><span class="proj-link">↗</span></div>
       <div class="proj-title">Life Science Chatbot POC</div>
-      <div class="proj-desc">Proof-of-concept AI chatbot for life science domain using LLMs. Enables natural language querying of scientific and clinical data with domain-specific knowledge.</div>
+      <div class="proj-desc">Proof-of-concept AI chatbot for life science domain using LLMs. Enables natural language querying of scientific and clinical data with domain-specific knowledge. Includes conversational AI validation and response accuracy testing.</div>
       <div class="proj-stack"><span class="stack-tag">Python</span><span class="stack-tag">LLM</span><span class="stack-tag">NLP</span><span class="stack-tag">RAG</span></div>
       <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
         <a href="https://lifescience-chatbot-poc-jbbcmgikfkugfwpdhkumsc.streamlit.app/" target="_blank" style="font-family:var(--font-mono,monospace);font-size:0.72rem;color:var(--accent);text-decoration:none;border:1px solid rgba(0,212,170,0.3);padding:4px 12px;border-radius:100px;"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:5px;"></span>Live Chatbot</a>
@@ -267,6 +292,7 @@ footer{padding:2rem 3rem;display:flex;justify-content:space-between;align-items:
     <p class="section-sub">Open to freelance projects and interesting opportunities in QA Automation, Data Engineering, and AI tooling. If you have a project in mind or just want to talk tech — feel free to reach out!</p>
     <div class="contact-links">
       <a href="https://github.com/Reddy062023" target="_blank" class="contact-link">⚡ GitHub</a>
+      <a href="https://www.linkedin.com/in/japendrareddy-seethammagari-202654bb/" target="_blank" class="contact-link">💼 LinkedIn</a>
       <a href="https://data-science-portfolio-jtfhi37j2uq9n24nldfx9z.streamlit.app/" target="_blank" class="contact-link">📊 Live Dashboard</a>
       <a href="mailto:japendras06@gmail.com" class="contact-link">✉️ japendras06@gmail.com</a>
     </div>
